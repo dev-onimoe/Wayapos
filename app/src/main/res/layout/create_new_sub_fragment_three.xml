@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pattern_bgrd">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/create_subscription"
+                            android:textColor="@color/dark_grey"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/linkCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/card">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:background="@color/dark_grey"
+                            app:layout_constraintBottom_toBottomOf="@+id/dashes_reviewsTxt"
+                            app:layout_constraintEnd_toStartOf="@+id/dashes_reviewsTxt"
+                            app:layout_constraintStart_toEndOf="@+id/dashes_linkDetails"
+                            app:layout_constraintTop_toTopOf="@id/dashes_reviewsTxt" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:background="@color/dark_grey"
+                            app:layout_constraintBottom_toBottomOf="@+id/dashes_reviewsTxt"
+                            app:layout_constraintEnd_toStartOf="@+id/dashes_linkDetails"
+                            app:layout_constraintStart_toEndOf="@+id/goodIc"
+                            app:layout_constraintTop_toTopOf="@id/dashes_reviewsTxt" />
+
+                        <TextView
+                            android:id="@+id/planDetails"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Plan Details"
+                            android:textColor="@color/deep_orange"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toStartOf="@id/linkDetails"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/goodIc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintEnd_toEndOf="@id/planDetails"
+                            app:layout_constraintStart_toStartOf="@id/planDetails"
+                            app:layout_constraintTop_toBottomOf="@id/planDetails"
+                            app:srcCompat="@drawable/good_ic" />
+
+
+                        <TextView
+                            android:id="@+id/linkDetails"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Link Details"
+                            android:textColor="@color/deep_orange"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toStartOf="@id/reviewsTxt"
+                            app:layout_constraintStart_toEndOf="@id/planDetails"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/dashes_linkDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintEnd_toStartOf="@id/reviewsTxt"
+                            app:layout_constraintStart_toStartOf="@id/linkDetails"
+                            app:layout_constraintTop_toBottomOf="@id/linkDetails"
+                            app:srcCompat="@drawable/good_ic" />
+
+                        <TextView
+                            android:id="@+id/reviewsTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Reviews"
+                            android:textColor="@color/deep_orange"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/linkDetails"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/dashes_reviewsTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintEnd_toEndOf="@id/reviewsTxt"
+                            app:layout_constraintStart_toStartOf="@id/reviewsTxt"
+                            app:layout_constraintTop_toBottomOf="@id/reviewsTxt"
+                            app:srcCompat="@drawable/good_ic" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/planCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linkCard">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/planNameTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/plan_name"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/planNameValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Go Tv"
+                            android:textColor="@color/dark_grey"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/planNameTxt" />
+
+
+                        <TextView
+                            android:id="@+id/billingDetailsTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Billing Details"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/planNameValue" />
+
+                        <TextView
+                            android:id="@+id/billingDetailsValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Every month the customer will be charge"
+                            android:textColor="@color/dark_grey"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/billingDetailsTxt" />
+
+                        <ImageView
+                            android:id="@+id/firstCircle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/billingDetailsValue"
+                            app:srcCompat="@drawable/orange_ellipse" />
+
+
+                        <View
+                            android:id="@id/viewOne"
+                            android:layout_width="2dp"
+                            android:layout_height="0dp"
+                            android:background="@color/deep_orange"
+                            app:layout_constraintBottom_toTopOf="@id/secondCircle"
+                            app:layout_constraintEnd_toEndOf="@id/firstCircle"
+                            app:layout_constraintStart_toStartOf="@id/firstCircle"
+                            app:layout_constraintTop_toBottomOf="@id/firstCircle" />
+
+                        <ImageView
+                            android:id="@+id/secondCircle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/firstCircle"
+                            app:srcCompat="@drawable/orange_ellipse" />
+
+
+                        <View
+                            android:id="@id/viewTwo"
+                            android:layout_width="2dp"
+                            android:layout_height="0dp"
+                            android:background="@color/deep_orange"
+                            app:layout_constraintBottom_toTopOf="@id/thirdCircle"
+                            app:layout_constraintEnd_toEndOf="@id/secondCircle"
+                            app:layout_constraintStart_toStartOf="@id/secondCircle"
+                            app:layout_constraintTop_toBottomOf="@id/secondCircle" />
+
+                        <ImageView
+                            android:id="@+id/thirdCircle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="80dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/secondCircle"
+                            app:srcCompat="@drawable/orange_ellipse" />
+
+                        <TextView
+                            android:id="@+id/firstPaymentTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="First Payment"
+                            app:layout_constraintStart_toEndOf="@id/firstCircle"
+                            app:layout_constraintTop_toTopOf="@id/firstCircle" />
+
+                        <TextView
+                            android:id="@+id/authorizedPaymentAmountTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            tools:text="Authorization Payment: NGN1,000"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@id/firstCircle"
+                            app:layout_constraintTop_toBottomOf="@id/firstPaymentTxt" />
+
+                        <TextView
+                            android:id="@+id/totalAmountSubTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Subscription Amount"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@id/firstCircle"
+                            app:layout_constraintTop_toBottomOf="@id/authorizedPaymentAmountTxt" />
+
+
+                        <TextView
+                            android:id="@+id/everyMonthTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Every Month after the first payment"
+                            app:layout_constraintStart_toEndOf="@id/secondCircle"
+                            app:layout_constraintTop_toTopOf="@id/secondCircle" />
+
+                        <TextView
+                            android:id="@+id/recurrentTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Recurrent Payments: NGN1000"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@id/secondCircle"
+                            app:layout_constraintTop_toBottomOf="@id/everyMonthTxt" />
+
+
+
+                        <TextView
+                            android:id="@+id/countCircle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="No. of cycles       5"
+                            app:layout_constraintStart_toEndOf="@id/thirdCircle"
+                            app:layout_constraintTop_toTopOf="@id/thirdCircle" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/nextBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="40dp"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/planCard" />
+
+                <Button
+                    android:id="@+id/previousBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/previous"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/nextBtn" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:elevation="10dp"
+            app:cpb_background_progressbar_color="#b6bbd8"
+            app:cpb_background_progressbar_width="8dp"
+            app:cpb_indeterminate_mode="true"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progressbar_color="@color/deep_orange"
+            app:cpb_progressbar_width="8dp"
+            app:cpb_round_border="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

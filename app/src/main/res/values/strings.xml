@@ -1,0 +1,309 @@
+<resources>
+    <string name="app_name">Wayapos</string>
+    <string name="wayapay">waya<b>pay</b></string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="onboarding_description_txt_one">Send links to your customers to pay you with card, bank, ussd, wallet, or payAttitude</string>
+    <string name="onboarding_title_one">Request Payment</string>
+    <string name="get_started">Get Started</string>
+    <string name="onboarding_title_two">Follow your Metrics</string>
+    <string name="onboarding_description_txt_two">Stay up-to-date with your revenue, payouts and recent activity on your business.</string>
+    <string name="onboarding_title_three">Enjoy Instant Support</string>
+    <string name="onboarding_description_txt_three">"Search our FAQ for answers to any questions or chat with us "</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="password">Password</string>
+    <string name="email_phone_number">Email/Phone number</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_an_account_yet_sign_up_now">Dont have an account yet? <font color="#F88E36">Sign up now</font></string>
+    <string name="forgot_passwrd">Forgot Password</string>
+    <string name="please_enter_your_email_or_phone_number_to_reset_your_password_associated_with_your_wayapay_account">Please enter your email or phone number to reset your password associated with your wayapay account</string>
+    <string name="back_to_sign_in">Back To Sign In</string>
+    <string name="reset_your_password">Reset your Password</string>
+    <string name="please_input_the_otp_sent_to_your">Please Input the OTP sent to your mobile number.</string>
+    <string name="verify">Verify</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="dial_347_006_5_to_get_otp">Dial *347*006*5# to get OTP</string>
+    <string name="verify_via_email_address">Verify via email address</string>
+    <string name="if_you_did_not_recieve_an_otp_you_may_possibly_have_your_do_not_disturb_activated_on_your_network_provider_to_enable_you_receive_sms_otp_please_do_the_following_mtn_text_allow_to_2442_glo_text_cancel_to_2442_airtel_text_stop_to_2442_9mobile_text_start_to_2442">If you did not receive an OTP, you may possibly have your DO NOT DISTURB activated on your network provider.\n\n To enable you receive SMS/OTP please do the following:\n\n - MTN, text ALLOW to 2442.\n - GLO, text CANCEL to 2442.\n - AIRTEL, text STOP to 2442.\n - 9MOBILE, text START to 2442</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="change_password">Change Password</string>
+    <string name="fill_in_your_new_password">Fill in your new password</string>
+    <string name="your_password_has_been_reset_seccessfully">Your Password has been reset successfully</string>
+    <string name="bvn_linked_success">BVN Linked Successfully</string>
+    <string name="log_in">Login</string>
+
+    <string name="done">Done</string>
+    <string name="register">Register</string>
+    <string name="business_name">Business Name <font color="#F88E36">*</font></string>
+    <string name="already_have_an_account_login">Already have an account?<font color="#FF4400"> <u>Login Now</u></font></string>
+    <string name="business_type">Business Type <font color="#F88E36">*</font></string>
+    <string name="business_phone_number">Business Phone <Nu></Nu>mber <font color="#FF4400">*</font></string>
+    <string name="personal_phone_number">Personal Phone <Nu></Nu>mber <font color="#FF4400">*</font></string>
+    <string name="register_cont">Register cont.</string>
+    <string name="password_must_contain_at_least_8_characters_an_uppercase_letter_a_lowercase_letter_a_number_and_a_special_character">Password must contain at least 8 characters, an uppercase letter, a lowercase letter, a number and a special character.</string>
+    <string name="i_consent_to_the_collection_and_processing_of_my_personal_data_in_line_with_data_regulations_as_described_in_the">I consent to the collection and processing of my personal data in line with data regulations as described in the <font color="#"><u>Wayapay Privacy Policy</u></font></string>
+    <string name="by_clicking_the_create_your_account_button_you_agree_to_wayapay_s_terms_of_acceptable_use">By clicking the “Create your account” button, you agree to <font color="#F88E36"> <u>Wayapay’s terms of acceptable use.</u></font></string>
+    <string name="a_one_time_verification_code_has_been_sent_to_your_email_address">A one time verification code has been sent to your email address</string>
+    <string name="a_one_time_verification_code_has_been_sent_to_your_phone_number">A one time verification code has been sent to your phone number</string>
+    <string name="verify_your_account">Verify your Account</string>
+    <string name="did_not_get_otp">Did not get OTP?</string>
+    <string name="settings">Settings</string>
+    <string name="notification">Notification</string>
+    <string name="transaction">Transaction</string>
+    <string name="home">Home</string>
+    <string name="live_mode">Live Mode</string>
+    <string name="commission">Commission</string>
+    <string name="net_revenue">Net Revenue</string>
+    <string name="gross_revenue">Gross Revenue</string>
+    <string name="features">Features</string>
+    <string name="last_settlement">Last Settlement</string>
+    <string name="no_settlement_yet">No Settlement Yet</string>
+    <string name="see_all_settlements"><u>See all settlements</u></string>
+    <string name="next_settlement">Next Settlement</string>
+    <string name="earn_rewards_for_inviting_businesses">Earn Rewards for Inviting businesses..</string>
+    <string name="position">person_njdsf</string>
+    <string name="wayapay_web_transactions"><b>Transactions</b></string>
+    <string name="wayapay_settlements"><b>Settlements</b></string>
+    <string name="transactions">Transactions</string>
+    <string name="settlements">Settlements</string>
+    <string name="filter">FILTER</string>
+    <string name="status">Status</string>
+    <string name="analytics">Analytics</string>
+    <string name="payment">Payment</string>
+    <string name="paid_on">Paid On</string>
+    <string name="refund">Refund</string>
+    <string name="reference_id">Reference ID</string>
+
+    <string name="share_referal_code">Visit https://wayapay.ng to download Wayapay mobile app and start collecting instant payment from your customers online or offline in a minute. Remember to input my referral code: %s while signing up.</string>
+    <string name="channel">Channel</string>
+    <string name="wayapay_fees">Wayapay Fees</string>
+    <string name="time_spent">TIME SPENT</string>
+    <string name="device_used">Device Used</string>
+    <string name="details">Details</string>
+    <string name="timeout_request">Request Timed out</string>
+    <string name="update_password">Please Kindly change your Password, its 90 days old</string>
+    <string name="business_email">Business Email <font color="#F88E36">*</font></string>
+    <string name="_234">+234</string>
+    <string name="last_name_required">Last Name <font color="#F88E36">*</font></string>
+    <string name="last_name">Last Name <font color="#F88E36">*</font></string>
+    <string name="first_name_required">First Name <font color="#F88E36">*</font></string>
+    <string name="personal_email_address">Personal Email Address <font color="#F88E36">*</font></string>
+    <string name="office_address">Office Address <font color="#F88E36">*</font></string>
+    <string name="state">state <font color="#F88E36">*</font></string>
+    <string name="city">City <font color="#F88E36">*</font></string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="select_one">select one</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="last_name_is_required">Last name is required</string>
+    <string name="confirm_password">Confirm Password <font color="#F88E36">*</font></string>
+    <string name="create_password">Create Password <font color="#F88E36">*</font></string>
+    <string name="payment_link">Payment Link</string>
+    <string name="subscription">Subscription</string>
+    <string name="settlement">Settlement</string>
+    <string name="terminals">Terminals</string>
+    <string name="switch_product">Switch Product</string>
+    <string name="merchant_business_name">Merchant Business Name</string>
+    <string name="welcome_to_wayapay_web">Welcome to Wayapay Web</string>
+    <string name="your_business_is_in_test_mode_so_you_can_start_using_wayapay_web_right_away_to_activate_live_payments_submit_your_compliance_forms">Your business is currently in <b> Tier Level 1.</b> and account is in test mode, you can use integrate wayapay in test mode.
+
+ Kindly upgrade your tier level to activate live payment collection.</string>
+    <string name="t1_upgrade_your_account_to_do_larger_transactions">T1: <font color="#F88E36">Upgrade</font> your account to\ndo larger transactions</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="terms_amp_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="about_us">About Us</string>
+    <string name="about_us_message">As the complexity of apps vary, the terms you include in your agreement will vary as well. Let’s look at the standard terms and conditions agreements for three categories of apps:\n\n\n
+
+1. Simple apps
+These apps have a simple function and are easy to use, such as clock or dictionary apps. Common clauses for simple mobile apps include:\n\n
+
+Ownership of content\n
+Right to change the app at any time\n
+Prohibited uses\n
+Warranty and liability disclaimers\n
+Right to terminate user accounts\n\n
+2. Software as a Service (SaaS) Apps
+These apps are more complex because they rely on an external cloud to bring their service to users, such as Google Docs or Instagram.\n\n
+
+Because these apps are often content-sharing platforms, SaaS terms and conditions commonly include a clause addressing user-generated content.\n
+
+Your terms and conditions should go over ownership rights and rules for user-generated content. For example:\n
+
+Users maintain ownership of the content they create\n
+App owner can restrict abusive behavior\n
+App owner can delete inappropriate user-generated content\n
+App owner can terminate users’ accounts for violations of the terms of use</string>
+    <string name="profile_settings">Profile Settings</string>
+    <string name="terms_condition_message">As the complexity of apps vary, the terms you include in your agreement will vary as well. Let’s look at the standard terms and conditions agreements for three categories of apps:\n\n\n
+
+1. Simple apps
+These apps have a simple function and are easy to use, such as clock or dictionary apps. Common clauses for simple mobile apps include:\n\n\n
+
+Ownership of content\n
+Right to change the app at any time\n
+Prohibited uses\n
+Warranty and liability disclaimers\n
+Right to terminate user accounts\n\n\n\n
+2. Software as a Service (SaaS) Apps\n
+These apps are more complex because they rely on an external cloud to bring their service to users, such as Google Docs or Instagram.\n\n
+
+Because these apps are often content-sharing platforms, SaaS terms and conditions commonly include a clause addressing user-generated content.\n\n
+
+Your terms and conditions should go over ownership rights and rules for user-generated content. For example:\n\n
+
+Users maintain ownership of the content they create\n
+App owner can restrict abusive behavior\n
+App owner can delete inappropriate user-generated content\n
+App owner can terminate users’ accounts for violations of the terms of use</string>
+    <string name="privacy_policy_message">Privacy is not a new concept. Humans have always desired privacy in their social as well as private lives. But the idea of privacy as a human right is a relatively modern phenomenon.\n\n
+
+Around the world, laws and regulations have been developed for the protection of data related to government, education, health, children, consumers, financial institutions, etc.\n\n
+
+This data is critical to the person it belongs to. From credit card numbers and social security numbers to email addresses and phone numbers, our sensitive, personally identifiable information is important. This sort of information in unreliable hands can potentially have far-reaching consequences.\n\n
+
+Companies or websites that handle customer information are required to publish their Privacy Policies on their business websites. If you own a website, web app, mobile app or desktop app that collects or processes user data, you most certainly will have to post a Privacy Policy on your website (or give in-app access to the full Privacy Policy agreement).</string>
+    <string name="update_kyc">Update KYC</string>
+    <string name="dispute">dispute</string>
+    <string name="terms_amp_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="upload_profile_image">Upload Profile Image</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="tier_5">Tier 5</string>
+    <string name="tier_2">Tier 2</string>
+    <string name="tier_1">Tier 1</string>
+    <string name="tier_4">Tier 4</string>
+    <string name="tier_3">Tier 3</string>
+    <string name="upgrade_kyc_level">Upgrade KYC Level</string>
+    <string name="phone_amp_email_verification"><![CDATA[Phone & Email Verification]]></string>
+    <string name="bvn_verification">BVN Verification</string>
+    <string name="click_to_login_to_your_web_version_to_continue">Click to login to your web version to continue</string>
+    <string name="wayapay_web">Wayapay web</string>
+    <string name="create_and_share_a_wayapaychat_payment_link_in_under_a_minute_with_your_customers_via_email_sms_messenger_chatbot_etc">Create and share a Wayapaychat Payment Link in under a minute with your customers via email, SMS, messenger, chatbot etc.</string>
+    <string name="create_new_payment_link">Create New Payment Link</string>
+    <string name="payment_link_name">Payment Link Name <font color="#F88E36">*</font></string>
+    <string name="name_your_payment_link">Name your payment link</string>
+    <string name="description">Description</string>
+    <string name="optional">Optional</string>
+    <string name="the_payment_link_name_and_description_will_appear_on_the_invoice_as_entered_above">The payment link name and description will appear on the invoice as entered above</string>
+    <string name="amount">Amount <font color="#F88E36">*</font></string>
+    <string name="ngn">NGN</string>
+    <string name="per_unit">Per Unit</string>
+    <string name="enter_amount_customers_will_pay_in_ngn">Enter amount customers will pay in (NGN)</string>
+    <string name="minimum_plan_amount_is_ngn_100_leave_empty_to_allow_customers_enter_desired_amount">Minimum Plan amount is NGN 100, Leave empty to allow customers enter desired amount</string>
+    <string name="show_more">Show more options</string>
+    <string name="go_back">Go back</string>
+    <string name="create_link">Create Link</string>
+    <string name="choose_link_type">CHOOSE LINK TYPE</string>
+    <string name="one_time_payment_link">One-Time Payment Link</string>
+    <string name="with_one_time_payment_link_your_customer_will_pay_you_on_a_single_charge">With One-time payment link, your customer will pay you on a single charge</string>
+    <string name="subscription_payment_link">Subscription Payment Link</string>
+    <string name="customers_can_subscribe_to_your_service_with_this_link_and_be_charge_on_recurring_payment">Customers can subscribe to your service with this link and be charge on recurring payment.</string>
+    <string name="payment_links">Payment Links</string>
+    <string name="interval">Interval <font color="#F88E36">*</font></string>
+    <string name="count">Count <font color="#F88E36">*</font></string>
+    <string name="choose_plan_interval">choose plan interval</string>
+    <string name="set_limit_optional">Set limit [Optional]</string>
+    <string name="mobile_number">Mobile Number  <font color="#F88E36">*</font></string>
+    <string name="set_a_phone_number">set a phone number</string>
+    <string name="create_new_customer">CREATE NEW CUSTOMER</string>
+    <string name="first_name">First Name</string>
+    <string name="search_by_name_or_id">search by reference id</string>
+    <string name="create">Create</string>
+    <string name="customer_details">Customer Details</string>
+    <string name="subscription_details">Subscription Details</string>
+    <string name="plan">Plan</string>
+    <string name="need_help_view_documentation">Need Help? view <u>Documentation</u></string>
+    <string name="search_by_reference_id">Search by reference ID</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="richard_mubby">Richard Mubby</string>
+    <string name="view_customer">View Customer</string>
+    <string name="update_card">Update Card</string>
+    <string name="cancel_this_subscription">Cancel this subscription</string>
+    <string name="select_plan">Select plan</string>
+    <string name="select_plan_asterisks">Select plan <font color="#F88E36">*</font></string>
+    <string name="immediate_subscriptions_starts_with_the_first_payment">Immediate, subscriptions starts with the first payment</string>
+    <string name="date_from_which_subscription_should_start">Date from which subscription should start</string>
+    <string name="create_subscription">Create Subscription</string>
+    <string name="previous">Previous</string>
+    <string name="plan_name">Plan Name</string>
+    <string name="the_plan_name_and_plan_description_will_appear_on_the_invoice_as_entered_above">The Plan Name and Plan Description will appear on the invoice as entered above</string>
+    <string name="plan_name_asterisks">Plan Name <font color="#F88E36">*</font></string>
+    <string name="plan_description">Plan Description</string>
+    <string name="plan_amount">Plan Amount <font color="#F88E36">*</font></string>
+    <string name="total_count">Total Count</string>
+    <string name="create_new_plan">CREATE NEW PLAN</string>
+    <string name="no_plans_found">No plans Found</string>
+    <string name="no_sub_found">No subscription Found</string>
+    <string name="dd_mm_yy">DD-MM-YY</string>
+    <string name="start_date">start date</string>
+    <string name="start_date_asterisks">Start Date <font color="#F88E36">*</font></string>
+    <string name="create_plan">Create Plan</string>
+    <string name="select_customer">Select Customer</string>
+    <string name="end_date">end date</string>
+    <string name="choose_date">choose date</string>
+    <string name="some_information_about_this_payment_link">Some information about this payment link</string>
+    <string name="t1_upgrade_your_account">T1:  <font color="#FF6634">Upgrade</font> your account</string>
+    <string name="discover_beautiful_places_people_conversations_vendors_and_clients_chat_and_call_clients_friends_and_family">Discover beautiful places, people, conversations, vendors and clients. Chat and call clients, friends and family</string>
+    <string name="stay_up_to_date_with_your_revenue_payouts_and_recent_activity_on_your_business">Stay up-to-date with your revenue, payouts and recent activity on your business.</string>
+    <string name="free_internet_banking_amp_bills_payment"><![CDATA[Free Internet Banking & Bills Payment]]></string>
+    <string name="get_commission_when_your_referal_make_transaction_5_times">Get commission when your referal make transaction 5 times</string>
+    <string name="change_password_change_pin_etc">Change Password, Change PIN, etc.</string>
+    <string name="find_answers_quickly_send_us_a_message_call_us_directly">Find answers quickly, Send us a message, Call us directly.</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="view_our_terms_and_condition">view our terms and condition</string>
+    <string name="privacy_policy_txt">view our privacy policy</string>
+    <string name="know_more_about_us">Know more about us</string>
+    <string name="dispute_log">Dispute Log</string>
+    <string name="request_log">Request Log</string>
+    <string name="security">Security</string>
+    <string name="set_permissions_in_settings">Go to Settings -> Apps and Notifications ->         wayapay Demo -> App Permissions and grant access to Storage.</string>
+    <string name="kindly_enter_your_bvn">Kindly Enter your BVN</string>
+    <string name="add_bvn">Add BVN</string>
+    <string name="input_your_bvn_11_digits">Input your BVN(11 digits)</string>
+    <string name="phone_number">Phone number</string>
+    <string name="this_has_to_be_the_phone_number_tied_to_your_bvn">This has to be the phone number tied to your bvn</string>
+    <string name="enter_date_of_birth">Enter date of Birth</string>
+    <string name="enter_your_11_digits_bvn_number">Enter your 11 digits BVN Number</string>
+    <string name="dial_565_0_to_get_bvn">Dial *565*0# to get BVN</string>
+    <string name="link_bvn">Link BVN</string>
+    <string name="why_we_need_your_bvn"><u>Why we need your BVN?</u></string>
+    <string name="why_we_need_your_bvn_no_underline">Why we need your BVN?</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="bvn_11_digits">BVN (11 digits)</string>
+    <string name="invite_a_friend">Invite a Friend</string>
+    <string name="get_rewarded_for_inviting_friends_to_wayabank">Get rewarded for inviting friends to Wayabank</string>
+    <string name="from_all_your_invites">From all your invites</string>
+    <string name="money_earned">Money earned</string>
+    <string name="number_of_people_you_invites">Number of people you invites</string>
+    <string name="people_you_invited">People you invited</string>
+    <string name="you_invite_na_friend">You invite\na friend</string>
+    <string name="they_make_5_ntransaction">They make 5\ntransaction</string>
+    <string name="you_get_nngn_100">You get\nNGN 100</string>
+    <string name="none_of_you_friends_have_used_your_link_to_sign_up_or_have_not_added_anyone">None of you friends have used your link to sign up or have not added anyone</string>
+    <string name="invite_a_friend_and_earn">Invite a friend and earn</string>
+    <string name="your_earnings">Your Earnings</string>
+    <string name="invite_friends_to_earn">Invite friends to earn</string>
+    <string name="help_amp_support"><![CDATA[Help & Support]]></string>
+    <string name="call_wayabank_from_your_app">call wayabank from your app</string>
+    <string name="find_answers_quickly">Find answers quickly</string>
+    <string name="search_our_help_center">Search our help center</string>
+    <string name="make_a_phone_call">Make A Phone Call</string>
+    <string name="talk_to_customer_service_rep">Talk to customer service rep</string>
+    <string name="send_us_a_message">Send Us a message</string>
+    <string name="we_only_to_need_to_access_to_your_full_name_phone_number_and_date_of_birth">We only to need to access to your Full name, phone number and Date of birth</string>
+    <string name="linking_your_bvn_doesn_t_give_waya_access_to_your_bank_information_or_balances">Linking your BVN doesn’t give WAYA access to your bank information or balances.</string>
+    <string name="payments_channels">Payments channels</string>
+    <string name="successful_payments">Successful Payments</string>
+    <string name="failed_payments">Failed Payments</string>
+    <string name="wayabank_account">Wayabank Account</string>
+    <string name="settlement_account">Settlement Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chargeback_info">By accepting this chargeback, you’re instructing us to process a refund that will be deducted from your next settlement.</string>
+    <string name="upload_documents">Upload Documents<font color="#F88E36">*</font></string>
+    <string name="type_of_proof">Type of proof <font color="#F88E36">*</font> </string>
+</resources>

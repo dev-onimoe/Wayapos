@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_900"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/edit_pen" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/place_holder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/accountName"
+            android:layout_width="wrap_content"
+            android:textSize="13sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Mubarack Tahir"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/profileImage"
+            app:layout_constraintTop_toTopOf="@id/profileImage" />
+
+        <TextView
+            android:id="@+id/accountNumberTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Account No."
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/accountName"
+            app:layout_constraintTop_toBottomOf="@id/accountName" />
+
+        <TextView
+            android:id="@+id/accountNumberValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="4361174599"
+            android:textSize="13sp"
+            android:textColor="@color/deep_orange"
+            app:layout_constraintStart_toEndOf="@id/accountNumberTxt"
+            app:layout_constraintTop_toTopOf="@id/accountNumberTxt" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/referArea"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/refer_drawer_background"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="@id/accountNumberTxt"
+            app:layout_constraintTop_toBottomOf="@id/accountNumberTxt">
+
+            <TextView
+                android:id="@+id/referTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Referral code:"
+                android:textSize="11sp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/referValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="HJDSBF"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@id/referTxt"
+                app:layout_constraintStart_toEndOf="@id/referTxt"
+                app:layout_constraintTop_toTopOf="@id/referTxt" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/copy_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/referValue"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/color_copy_ic" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/batch_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/accountNumberTxt"
+            app:layout_constraintTop_toBottomOf="@+id/referArea"
+            app:srcCompat="@drawable/batch_ic" />
+
+        <TextView
+            android:id="@+id/kycLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginStart="10dp"
+            android:text="@string/t1_upgrade_your_account"
+            app:layout_constraintStart_toEndOf="@id/batch_ic"
+            app:layout_constraintTop_toTopOf="@id/batch_ic" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

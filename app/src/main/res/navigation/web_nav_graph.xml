@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/web_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.HomeFragment"
+        tools:layout="@layout/home_fragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_subscriptionFragment"
+            app:destination="@id/subscriptionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_terminalsFragment"
+            app:destination="@id/terminalsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_disputeFragment"
+            app:destination="@id/disputeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_paymentLinkFragment"
+            app:destination="@id/paymentLinkFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_customersFragment"
+
+            app:destination="@id/customersFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settlementFragment"
+            app:destination="@id/settlementFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_updateKycFragment"
+            app:destination="@id/updateKycFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.notification.NotificationFragment"
+        tools:layout="@layout/notification_fragment"
+        android:label="NotificationFragment" />
+    <fragment
+        tools:layout="@layout/transaction_fragment"
+        android:id="@+id/transactionFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.transaction.TransactionFragment"
+        android:label="TransactionFragment" >
+        <action
+            android:id="@+id/action_transactionFragment_to_viewTransactionFragment"
+            app:destination="@id/viewTransactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewTransactionFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.transaction.display_transaction.ViewTransactionFragment"
+        tools:layout="@layout/view_transaction_fragment"
+        android:label="ViewTransactionFragment" >
+        <action
+            android:id="@+id/action_viewTransactionFragment_to_customerDetailsFragment"
+            app:destination="@id/customerDetailsFragment" />
+        <argument
+            android:name="data"
+            app:argType="com.wayapaychat.wayapay.framework.network.model.TransactionData" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerDetailsFragment"
+        tools:layout="@layout/customer_details_fragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.transaction.display_transaction.payment.CustomerDetailsFragment"
+        android:label="CustomerDetailsFragment" >
+        <argument
+            android:name="data"
+            app:argType="com.wayapaychat.wayapay.framework.network.model.TransactionData" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.settings.SettingsFragment"
+        tools:layout="@layout/settings_layout"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_updateKycFragment"
+            app:destination="@id/updateKycFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        tools:layout="@layout/profile_fragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.settings.profile.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/updateKycFragment"
+        tools:layout="@layout/update_kyc_fragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.settings.kyc.UpdateKycFragment"
+        android:label="UpdateKycFragment" >
+        <action
+            android:id="@+id/action_updateKycFragment_to_addBvnFragment"
+            app:destination="@id/addBvnFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subscriptionFragment"
+        tools:layout="@layout/subscription_fragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.subscription.SubscriptionFragment"
+        android:label="SubscriptionFragment" >
+        <action
+            android:id="@+id/action_subscriptionFragment_to_viewSubscriptionFragment"
+            app:destination="@id/viewSubscriptionFragment" />
+        <action
+            android:id="@+id/action_subscriptionFragment_to_createNewFragment"
+            app:destination="@id/createNewFragment" />
+        <action
+            android:id="@+id/action_subscriptionFragment_to_viewPlanFragment"
+            app:destination="@id/viewPlanFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/terminal_fragment"
+
+        android:id="@+id/terminalsFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.terminals.TerminalsFragment"
+        android:label="TerminalsFragment" />
+    <fragment
+        tools:layout="@layout/dispute_fragment"
+        android:id="@+id/disputeFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.dispute.DisputeFragment"
+        android:label="DisputeFragment" >
+        <action
+            android:id="@+id/action_disputeFragment_to_disputeDetailsFragment"
+            app:destination="@id/disputeDetailsFragment" />
+        <action
+            android:id="@+id/action_disputeFragment_to_resolvedDisputeFragment"
+            app:destination="@id/resolvedDisputeFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/payment_link"
+        android:id="@+id/paymentLinkFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.payment_link.PaymentLinkFragment"
+        android:label="PaymentLinkFragment" >
+        <action
+            android:id="@+id/action_paymentLinkFragment_to_createPaymentLinkFragment"
+            app:destination="@id/createPaymentLinkFragment" />
+        <action
+            android:id="@+id/action_paymentLinkFragment_to_paymentLinksFragment"
+            app:destination="@id/paymentLinksFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/customers_fragment"
+
+        android:id="@+id/customersFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.customers.CustomersFragment"
+        android:label="CustomersFragment" >
+        <action
+            android:id="@+id/action_customersFragment_to_customerDetailsFragment2"
+            app:destination="@id/customerDetailsFragment2" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/settlement_fragment"
+        android:id="@+id/settlementFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.settlements.SettlementFragment"
+        android:label="SettlementFragment" >
+        <action
+            android:id="@+id/action_settlementFragment_to_viewSettlementFragment"
+            app:destination="@id/viewSettlementFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/create_payment_link"
+        android:id="@+id/createPaymentLinkFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.payment_link.create_link.CreatePaymentLinkFragment"
+        android:label="CreatePaymentLinkFragment" >
+        <action
+            android:id="@+id/action_createPaymentLinkFragment_to_paymentLinksFragment"
+            app:destination="@id/paymentLinksFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/payment_link_fragment"
+        android:id="@+id/paymentLinksFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.payment_link.payment_links.PaymentLinksFragment"
+        android:label="PaymentLinksFragment" >
+        <action
+            android:id="@+id/action_paymentLinksFragment_to_createPaymentLinkFragment"
+            app:destination="@id/createPaymentLinkFragment" />
+        <action
+            android:id="@+id/action_paymentLinksFragment_to_viewOneTimePaymentLinkFragment"
+            app:destination="@id/viewOneTimePaymentLinkFragment" />
+        <action
+            android:id="@+id/action_paymentLinksFragment_to_viewSubPaymentLinkFragment"
+            app:destination="@id/viewSubPaymentLinkFragment" />
+        <action
+            android:id="@+id/action_paymentLinksFragment_to_subscriptionDetailsFragment"
+            app:destination="@id/subscriptionDetailsFragment" />
+        <action
+            android:id="@+id/action_paymentLinksFragment_to_createRecurrentPaymentLinkFragment"
+            app:destination="@id/createRecurrentPaymentLinkFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/customer_details_layout"
+        android:id="@+id/customerDetailsFragment2"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.customers.customer_details.CustomerDetailsFragment"
+        android:label="CustomerDetailsFragment" >
+        <action
+            android:id="@+id/action_customerDetailsFragment2_to_viewCustomerSubscription"
+            app:destination="@id/viewCustomerSubscription" />
+        <argument
+            android:name="customerId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/view_customer_subscription"
+        android:id="@+id/viewCustomerSubscription"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.customers.customer_details.ViewCustomerSubscription"
+        android:label="ViewCustomerSubscription" />
+    <fragment
+        android:id="@+id/viewSubscriptionFragment"
+        tools:layout="@layout/view_subscription_layout"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.subscription.ViewSubscriptionFragment"
+        android:label="ViewSubscriptionFragment" >
+        <argument
+            android:name="subscriptionData"
+            app:argType="com.wayapaychat.wayapay.framework.network.model.CustomerSubscriptionData" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/create_new_fragment"
+        android:id="@+id/createNewFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.subscription.CreateNewFragment"
+        android:label="CreateNewFragment" >
+        <action
+            android:id="@+id/action_createNewFragment_to_createNewSubFragmentTwo"
+            app:destination="@id/createNewSubFragmentTwo" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewSubFragmentTwo"
+        tools:layout="@layout/create_new_sub_fragment_two"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.subscription.CreateNewSubFragmentTwo"
+        android:label="CreateNewSubFragmentTwo" >
+        <action
+            android:id="@+id/action_createNewSubFragmentTwo_to_createNewSubFragmentThree"
+            app:destination="@id/createNewSubFragmentThree" />
+        <argument
+            android:name="createSubRequest"
+            app:argType="com.wayapaychat.wayapay.framework.network.model.ViewStateSubscriptionRequest" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/create_new_sub_fragment_three"
+        android:id="@+id/createNewSubFragmentThree"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.subscription.CreateNewSubFragmentThree"
+        android:label="CreateNewSubFragmentThree" >
+        <argument
+            android:name="createSubRequest"
+            app:argType="com.wayapaychat.wayapay.framework.network.model.ViewStateSubscriptionRequest" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/view_plan_framgent"
+        android:id="@+id/viewPlanFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.subscription.ViewPlanFragment"
+        android:label="ViewPlanFragment" >
+        <argument
+            android:name="plan"
+            app:argType="com.wayapaychat.wayapay.framework.network.model.PlanData" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/view_one_time_payment"
+        android:id="@+id/viewOneTimePaymentLinkFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.payment_link.payment_links.view_payment.ViewOneTimePaymentLinkFragment"
+        android:label="ViewOneTimePaymentLinkFragment" >
+        <argument
+            android:name="content"
+            app:argType="com.wayapaychat.wayapay.framework.network.model.Content" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/view_sub_link_layout"
+        android:id="@+id/viewSubPaymentLinkFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.payment_link.payment_links.view_payment.ViewSubPaymentLinkFragment"
+        android:label="ViewSubPaymentLinkFragment" >
+        <argument
+            android:name="content"
+            app:argType="com.wayapaychat.wayapay.framework.network.model.Content" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/subscription_details_layout"
+        android:id="@+id/subscriptionDetailsFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.payment_link.payment_links.view_payment.SubscriptionDetailsFragment"
+        android:label="SubscriptionDetailsFragment" >
+        <argument
+            android:name="content"
+            app:argType="com.wayapaychat.wayapay.framework.network.model.Content" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/add_bvn_layout"
+        android:id="@+id/addBvnFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.settings.kyc.bvn.AddBvnFragment"
+        android:label="AddBvnFragment" >
+        <action
+            android:id="@+id/action_addBvnFragment_to_verifyBvnFragment"
+            app:destination="@id/verifyBvnFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/verifiy_bvn_layout"
+        android:id="@+id/verifyBvnFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.settings.kyc.bvn.VerifyBvnFragment"
+        android:label="VerifyBvnFragment" >
+        <action
+            android:id="@+id/action_verifyBvnFragment_to_bvnOtpVerificationFragment"
+            app:destination="@id/bvnOtpVerificationFragment" />
+        <action
+            android:id="@+id/action_verifyBvnFragment_to_BVNLinkedSuccessFragment"
+            app:destination="@id/BVNLinkedSuccessFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/bvn_otp_verification_fragment"
+        android:id="@+id/bvnOtpVerificationFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.settings.kyc.bvn.BvnOtpVerificationFragment"
+        android:label="BvnOtpVerificationFragment" />
+    <fragment
+        android:id="@+id/BVNLinkedSuccessFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.settings.kyc.bvn.BVNLinkedSuccessFragment"
+        android:label="BVNLinkedSuccessFragment" >
+        <action
+            android:id="@+id/action_BVNLinkedSuccessFragment_to_updateKycFragment2"
+            app:destination="@id/updateKycFragment"
+            app:popUpTo="@id/updateKycFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_view_settlement"
+        android:id="@+id/viewSettlementFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.settlements.wayapay_settlements.display_settlement.ViewSettlementFragment"
+        android:label="ViewSettlementFragment" >
+        <argument
+            android:name="data"
+            app:argType="com.wayapaychat.wayapay.framework.network.model.SettleContent" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/create_recurrent_payment_link"
+        android:id="@+id/createRecurrentPaymentLinkFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.payment_link.create_link.CreateRecurrentPaymentLinkFragment"
+        android:label="CreateRecurrentPaymentLinkFragment" />
+    <fragment
+        android:id="@+id/disputeDetailsFragment"
+        tools:layout="@layout/fragment_dispute_details"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.dispute.dispute_details.DisputeDetailsFragment"
+        android:label="DisputeDetailsFragment" >
+        <argument
+            android:name="data"
+            app:argType="com.wayapaychat.wayapay.framework.network.model.GetAllDisputeResponseDataContent" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_resolved_dispute"
+        android:id="@+id/resolvedDisputeFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.dispute.dispute_details.ResolvedDisputeFragment"
+        android:label="ResolvedDisputeFragment" >
+        <argument
+            android:name="data"
+            app:argType="com.wayapaychat.wayapay.framework.network.model.GetAllDisputeResponseDataContent" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_accept_charge_back"
+        android:id="@+id/acceptChargeBackFragment"
+        android:name="com.wayapaychat.wayapay.presentation.screens.home.dispute.dispute_details.AcceptChargeBackFragment"
+        android:label="AcceptChargeBackFragment" >
+        <action
+            android:id="@+id/action_acceptChargeBackFragment_to_disputeFragment"
+            app:destination="@id/disputeFragment" />
+    </fragment>
+</navigation>

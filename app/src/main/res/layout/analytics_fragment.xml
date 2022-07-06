@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_marginTop="60dp"
+            android:id="@+id/comingSoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMING SOON"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/stayTuned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="STAY TUNED"
+            android:textColor="@color/light_orange"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/comingSoon" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:layout_constraintBottom_toTopOf="@id/notAvailable"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stayTuned"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/coming_soon_image" />
+
+        <TextView
+            android:id="@+id/notAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="This feature is not available yet "
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:layout_constraintVertical_bias="0.26999998" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@drawable/pattern_bgrd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="#66EDDFDA"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+            <ScrollView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="0dp">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/notificationTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notifications"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/paymentChannelBoard"
+                        app:layout_constraintTop_toBottomOf="@id/notificationTxt"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="@drawable/rounded_corner_white_bgr"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/paymentChannelsTxt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/payments_channels"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/successfulPaymentSwitch"
+                            app:layout_constraintTop_toBottomOf="@id/paymentChannelsTxt"
+                            android:layout_width="0dp"
+                            android:text="@string/successful_payments"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+
+                            android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/failedPaymentSwitch"
+                            app:layout_constraintTop_toBottomOf="@id/successfulPaymentSwitch"
+                            android:layout_width="0dp"
+                            android:text="@string/failed_payments"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/disputeBoard"
+                        app:layout_constraintTop_toBottomOf="@id/paymentChannelBoard"
+                        android:padding="10dp"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="@drawable/rounded_corner_white_bgr"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/disputeTxt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="Dispute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/loggedDisputeSwitch"
+                            app:layout_constraintTop_toBottomOf="@id/disputeTxt"
+                            android:layout_width="0dp"
+                            android:text="Logged disputes"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+
+                            android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/resolveDisputeSwitch"
+                            app:layout_constraintTop_toBottomOf="@id/loggedDisputeSwitch"
+                            android:layout_width="0dp"
+                            android:text="Resolve Dispute"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/disputeReminderSwitch"
+                            app:layout_constraintTop_toBottomOf="@id/resolveDisputeSwitch"
+                            android:layout_width="0dp"
+                            android:text="Dispute Reminders"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <TextView
+                        android:id="@+id/preferencesTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Preferences"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/disputeBoard" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/preferencesBoard"
+                        app:layout_constraintTop_toBottomOf="@id/preferencesTxt"
+                        android:padding="10dp"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="@drawable/rounded_corner_white_bgr"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/paymentChannelTxt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="PAYMENT CHANNEL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/allowCardSwitch"
+                            app:layout_constraintTop_toBottomOf="@id/paymentChannelTxt"
+                            android:layout_width="0dp"
+                            android:text="Allow Card Payment"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/allowBankSwitch"
+                            app:layout_constraintTop_toBottomOf="@id/allowCardSwitch"
+                            android:layout_width="0dp"
+                            android:text="Allow Bank Payments"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/allowUssdPaymentSwitch"
+                            app:layout_constraintTop_toBottomOf="@id/allowBankSwitch"
+                            android:layout_width="0dp"
+                            android:text="Allow USSD Payments"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/allowWalletPaymentSwitch"
+                            app:layout_constraintTop_toBottomOf="@id/allowUssdPaymentSwitch"
+                            android:layout_width="0dp"
+                            android:text="Allow Wallet Payments"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/paymentEarningBoard"
+                        app:layout_constraintTop_toBottomOf="@id/preferencesBoard"
+                        android:padding="10dp"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="@drawable/rounded_corner_white_bgr"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/paymentEarningTxt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="PAYMENT EARNING METHOD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <RadioGroup
+                            android:id="@+id/radioGroup"
+                            app:layout_constraintTop_toBottomOf="@id/paymentEarningTxt"
+                            android:layout_width="0dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:id="@+id/settlementAccount"
+                                android:text="@string/settlement_account"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/wayaBankAccount"
+                                android:text="@string/wayabank_account"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </RadioGroup>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </layout>
+    -->
+
+
+
+
+
+
+
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    android:background="@color/white"
+    android:fillViewport="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pattern_bgrd" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/deviceUsedTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_used"
+                android:textAllCaps="true"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/timeSpentTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_spent"
+                android:textAllCaps="true"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/firstCircle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/orange_circle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/timeSpentTxt">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/secondsNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="749"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seconds"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@id/secondsNumber"
+                        app:layout_constraintStart_toStartOf="@id/secondsNumber"
+                        app:layout_constraintTop_toBottomOf="@id/secondsNumber" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/secondCircle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/orange_circle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/timeSpentTxt">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/desktopIc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/desktop_ic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Desktop"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@id/desktopIc"
+                        app:layout_constraintStart_toStartOf="@id/desktopIc"
+                        app:layout_constraintTop_toBottomOf="@id/desktopIc" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="15dp"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/secondCircle"
+                android:background="@color/alpha_pale_orange"
+                android:layout_height="350dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+-->

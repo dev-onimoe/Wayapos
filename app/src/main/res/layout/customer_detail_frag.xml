@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/pattern_bgrd">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/infoCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            android:layout_margin="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:paddingTop="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/phoneTxt"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Phone" />
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/phoneValue"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+2348165359670" />
+                <View
+                    android:id="@+id/view1"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toBottomOf="@id/phoneValue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@color/grey"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/view1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/addedDateTxt"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Added Date" />
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@id/addedDateTxt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/addedDateValue"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="July 12, 2022 3:04PM" />
+                <View
+                    android:id="@+id/view2"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toBottomOf="@id/addedDateValue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@color/grey"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/view2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/customerId"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer ID" />
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@id/customerId"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/customerIdValue"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="wrap_content"
+                    android:drawablePadding="10dp"
+                    app:drawableEndCompat="@drawable/copy_ic"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="CUS_kj1weadhsbcl" />
+                <View
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toBottomOf="@id/customerIdValue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@color/grey"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/avoidUserBoard"
+            app:layout_constraintTop_toBottomOf="@id/infoCard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/avoidThisUser"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="Avoid this Customer"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    app:layout_constraintStart_toEndOf="@id/avoidThisUser"
+                    app:layout_constraintTop_toTopOf="@id/avoidThisUser"
+                    app:layout_constraintBottom_toBottomOf="@id/avoidThisUser"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/tool_tip_ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/avoidThisUserToggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:theme="@style/SwitchStyle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            app:layout_constraintTop_toBottomOf="@id/avoidUserBoard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/call"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:autoLink="phone"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    android:drawableStart="@drawable/call_ic"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="Call Customer"
+                    android:autoLink="phone"
+                    android:textColor="@color/black"
+                    android:drawablePadding="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

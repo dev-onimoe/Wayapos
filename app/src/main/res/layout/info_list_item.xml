@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/bigImage"
+            android:layout_width="300dp"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/bottomGuide"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="@id/rightMaginGuide"
+            app:layout_constraintStart_toStartOf="@id/leftMagingGuide"
+            app:layout_constraintTop_toTopOf="@id/topGuide"
+            tools:srcCompat="@drawable/pos_image" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottomGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/topGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/leftMagingGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightMaginGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/indicator_one"-->
+
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="5dp"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/indicator_two"-->
+<!--            app:layout_constraintEnd_toStartOf="@id/indicator_two"-->
+<!--            app:layout_constraintTop_toTopOf="@id/indicator_two"-->
+<!--            tools:srcCompat="@drawable/indicator_active_ic" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/indicator_two"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="5dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/descriptiontxt"-->
+<!--            tools:srcCompat="@drawable/indicator_inactive_ic" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/indicator_three"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="5dp"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/indicator_two"-->
+<!--            app:layout_constraintStart_toEndOf="@id/indicator_two"-->
+<!--            app:layout_constraintTop_toTopOf="@id/indicator_two"-->
+<!--            tools:srcCompat="@drawable/indicator_inactive_ic" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

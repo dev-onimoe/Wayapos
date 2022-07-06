@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/skipTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_grey"
+            android:text="@string/skip"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/infoViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toTopOf="@id/guideLine1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/skipTxt" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLine1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottomGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/topGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/leftMagingGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightMaginGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+        <TextView
+            android:id="@+id/titletxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/venice_blue"
+            app:layout_constraintTop_toBottomOf="@id/infoViewPager"
+            app:layout_constraintEnd_toStartOf="@id/rightMaginGuide"
+            app:layout_constraintStart_toStartOf="@id/leftMagingGuide"
+             />
+        <TextView
+            android:id="@+id/descriptiontxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintEnd_toEndOf="@+id/rightMaginGuide"
+            app:layout_constraintStart_toStartOf="@id/leftMagingGuide"
+            app:layout_constraintTop_toBottomOf="@id/titletxt"
+            />
+
+        <Button
+            android:id="@+id/getStartedBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:backgroundTint="@color/deep_orange"
+            android:textAllCaps="false"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/rightMaginGuide"
+            app:layout_constraintStart_toStartOf="@id/leftMagingGuide"
+            app:layout_constraintTop_toBottomOf="@id/indicator_two" />
+
+
+                <ImageView
+                    android:id="@+id/indicator_one"
+
+                    android:layout_width="20dp"
+                    android:layout_height="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/indicator_two"
+                    app:layout_constraintEnd_toStartOf="@id/indicator_two"
+                    app:layout_constraintTop_toTopOf="@id/indicator_two"
+                    tools:srcCompat="@drawable/indicator_active_ic" />
+
+                <ImageView
+                    android:id="@+id/indicator_two"
+                    android:layout_width="20dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/descriptiontxt"
+                    tools:srcCompat="@drawable/indicator_inactive_ic" />
+
+                <ImageView
+                    android:id="@+id/indicator_three"
+                    android:layout_width="20dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/indicator_two"
+                    app:layout_constraintStart_toEndOf="@id/indicator_two"
+                    app:layout_constraintTop_toTopOf="@id/indicator_two"
+                    tools:srcCompat="@drawable/indicator_inactive_ic" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Login "
+            android:background="@drawable/gray_stroke_radius"
+            android:visibility="invisible"
+            android:textColor="@color/light_orange"
+            android:textAllCaps="false"
+            android:padding="15dp"
+
+            app:layout_constraintEnd_toEndOf="@id/rightMaginGuide"
+            app:layout_constraintStart_toStartOf="@id/leftMagingGuide"
+            app:layout_constraintTop_toBottomOf="@id/getStartedBtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/cancel"
+                android:textColor="@color/deep_orange"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/updateTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/update_profile"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/save"
+                android:textColor="@color/deep_orange"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/save"
+                android:textColor="@color/deep_orange"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/profileArea"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/orange_circle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/updateTxt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MT"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/uploadTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/upload_profile_image"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profileArea" />
+
+            <TextView
+                android:id="@+id/accountNumberTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acct Number: 4361174599"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/uploadTxt" />
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:fillViewport="true"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/accountNumberTxt">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/firstNameField"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="First Name"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:padding="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/middleNameField"
+                        android:layout_width="0dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:hint="middle name"
+                        android:padding="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/firstNameField" />
+
+
+                    <EditText
+                        android:id="@+id/lastNameField"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:hint="Last Name"
+                        android:padding="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/middleNameField" />
+
+
+                    <TextView
+                        android:id="@+id/dateOfBirthField"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:inputType="text"
+                        android:text="Date of birth"
+                        android:maxLines="1"
+                        android:textSize="15sp"
+                        android:padding="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lastNameField" />
+                    <View
+                        android:id="@+id/dateView"
+                        android:layout_width="0dp"
+                        android:background="@color/dark_grey"
+                        app:layout_constraintStart_toStartOf="@id/dateOfBirthField"
+                        app:layout_constraintEnd_toEndOf="@id/dateOfBirthField"
+                        app:layout_constraintTop_toBottomOf="@id/dateOfBirthField"
+                        android:layout_height="1dp"/>
+
+
+                    <Spinner
+                        android:id="@+id/genderField"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:hint="@string/gender"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/dateView" />
+                    <View
+                        android:id="@+id/dateGender"
+                        android:layout_width="0dp"
+                        android:background="@color/grey"
+                        app:layout_constraintStart_toStartOf="@id/genderField"
+                        app:layout_constraintEnd_toEndOf="@id/genderField"
+                        app:layout_constraintTop_toBottomOf="@id/genderField"
+                        android:layout_height="1dp"/>
+                    <TextView
+                        android:id="@+id/contactDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/contact_details"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dateGender" />
+
+
+                    <EditText
+                        android:id="@+id/emailField"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="email address"
+                        android:singleLine="true"
+                        android:padding="15dp"
+                        android:inputType="textEmailAddress"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/contactDetails" />
+
+
+                    <EditText
+                        android:id="@+id/mobileNumberField"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile Number"
+                        android:padding="15dp"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/emailField" />
+
+
+                    <EditText
+                        android:id="@+id/districtState"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="District/State"
+                        android:inputType="textPostalAddress"
+                        android:singleLine="true"
+                        android:padding="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mobileNumberField" />
+
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Address"
+                        android:singleLine="true"
+                        android:padding="15dp"
+                        android:inputType="textPostalAddress"
+                        android:maxLines="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/districtState" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:elevation="10dp"
+                android:visibility="invisible"
+                app:cpb_background_progressbar_color="#b6bbd8"
+                app:cpb_background_progressbar_width="8dp"
+                app:cpb_indeterminate_mode="true"
+                app:cpb_progress_direction="to_right"
+                app:cpb_progressbar_color="@color/deep_orange"
+                app:cpb_progressbar_width="8dp"
+                app:cpb_round_border="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>

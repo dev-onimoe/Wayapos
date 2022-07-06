@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:background="@drawable/pattern_bgrd">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/subscriptionName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gotv Subscription - CUS_aoskcvjfdvs"
+
+                    android:textColor="@color/dark_grey"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolBar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Customer Card"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/cardInfoTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2433 - expires Dec. 31, 2022"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/updateCardBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Update Card"
+                            android:textAllCaps="false"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cardInfoTxt" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/subDetailsCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/card">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <TextView
+                            android:id="@+id/subscriptionTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/subscription_details"
+                            android:textColor="@color/grey"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/planTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="@string/plan"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/subscriptionTxt" />
+
+
+                        <TextView
+                            android:id="@+id/planValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gotv Subscription"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/planTxt" />
+
+                        <View
+                            android:id="@+id/viewOne"
+                            app:layout_constraintTop_toBottomOf="@id/planValue"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+
+
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/statusTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Status"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewOne" />
+
+
+                        <TextView
+                            android:id="@+id/statusValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Active"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/statusTxt" />
+
+                        <View
+                            android:id="@+id/viewTwo"
+                            app:layout_constraintTop_toBottomOf="@id/statusValue"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+
+
+
+                        <TextView
+                            android:id="@+id/subTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Subscription Code"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewTwo" />
+
+
+                        <TextView
+                            android:id="@+id/subValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sub_njkasdfvsd"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/subTxt" />
+
+                        <View
+                            android:id="@+id/viewThree"
+                            app:layout_constraintTop_toBottomOf="@id/subValue"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+
+
+
+                        <TextView
+                            android:id="@+id/amountTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Amount"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewThree" />
+
+
+                        <TextView
+                            android:id="@+id/amountValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NGN 5,000"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/amountTxt" />
+
+                        <View
+                            android:id="@+id/viewFour"
+                            app:layout_constraintTop_toBottomOf="@id/amountValue"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+
+
+                        <TextView
+                            android:id="@+id/intervalTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Interval"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewFour" />
+
+
+                        <TextView
+                            android:id="@+id/intervalValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Monthly"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/intervalTxt" />
+
+                        <View
+                            android:id="@+id/viewFive"
+                            app:layout_constraintTop_toBottomOf="@id/intervalValue"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+                        <TextView
+                            android:id="@+id/paymentTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Payment"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewFive" />
+
+
+                        <TextView
+                            android:id="@+id/paymentValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 of 3"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/paymentTxt" />
+
+                        <View
+                            android:id="@+id/viewSix"
+                            app:layout_constraintTop_toBottomOf="@id/paymentValue"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+
+
+                        <TextView
+                            android:id="@+id/subDateTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Subscription Date"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewSix" />
+
+
+                        <TextView
+                            android:id="@+id/subDateValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="June 16, 2022"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/subDateTxt" />
+
+                        <View
+                            android:id="@+id/viewSeven"
+                            app:layout_constraintTop_toBottomOf="@id/subDateValue"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/nextChargeTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Next charge Date"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewSeven" />
+
+
+                        <TextView
+                            android:id="@+id/nextChargeValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="July 16,2022"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/nextChargeTxt" />
+
+                        <View
+                            android:id="@+id/viewEight"
+                            app:layout_constraintTop_toBottomOf="@id/nextChargeValue"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/cancel_this_subscription"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/subDetailsCard" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
