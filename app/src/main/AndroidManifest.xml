@@ -16,9 +16,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Wayapay">
         <activity
+            android:name="com.wayapaychat.wayapos.views.activities.TransactionsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.wayapaychat.wayapos.views.activities.TransferModeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.wayapaychat.wayapos.views.activities.WayaPosHomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".presentation.screens.home.welcomescreen.WelcomeActivity"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".presentation.screens.MainActivity"
             android:exported="true"
@@ -102,6 +111,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <provider android:name="androidx.core.content.FileProvider"
+            android:authorities="com.com.wayapaychat.wayapay.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
     </application>
 
 </manifest>

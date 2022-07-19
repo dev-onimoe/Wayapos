@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="16">
+    <bytecodeTargetLevel target="11">
       <module name="WAYA-PAY-CHAT-2.0-WAYAPOS-ANDROID-MOBILE.buildSrc" target="16" />
       <module name="WAYA-PAY-CHAT-2.0-WAYAPOS-ANDROID-MOBILE.buildSrc.main" target="16" />
       <module name="WAYA-PAY-CHAT-2.0-WAYAPOS-ANDROID-MOBILE.buildSrc.test" target="16" />

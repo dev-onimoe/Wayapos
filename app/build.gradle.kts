@@ -7,10 +7,11 @@ import Dependencies.View
 plugins {
     androidApplication
     kotlinAndroid
+    kotlinAndroidExtensions
     kotlinKapt
     safeArgs
     daggerHiltAndroidPlugin
-    kotlinAndroidExtensions
+    id("org.jetbrains.kotlin.android")
 }
 android {
     defaultConfig {

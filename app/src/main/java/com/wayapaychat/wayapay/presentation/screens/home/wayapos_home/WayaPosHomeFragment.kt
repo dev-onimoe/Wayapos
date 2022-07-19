@@ -7,9 +7,11 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.wayapaychat.wayapay.R
 import com.wayapaychat.wayapay.databinding.WayaposHomeBinding
+import com.wayapaychat.wayapay.databinding.ComingSoonBinding
 import com.wayapaychat.wayapay.presentation.screens.home.HomeFragmentDirections
 import com.wayapaychat.wayapay.presentation.screens.refer_earn.ReferAndEarnActivity
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.android.synthetic.main.wayapos_home.*
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -20,16 +22,18 @@ class WayaPosHomeFragment @Inject constructor() :
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = WayaposHomeBinding.bind(view)
+
         initView()
     }
 
     private fun initView() {
-       /* listeners()*/
+        listeners()
+
     }
 
-    /*private fun listeners() {
+    private fun listeners() {
         with(binding) {
-            posTransactionArea.setOnClickListener {
+            /*posTransactionArea.setOnClickListener {
                 navigateToTransactionScreen()
             }
             terminalsArea.setOnClickListener {
@@ -38,9 +42,9 @@ class WayaPosHomeFragment @Inject constructor() :
             }
             referAndEarn.setOnClickListener {
                 startActivity(Intent(requireContext(), ReferAndEarnActivity::class.java))
-            }
+            }*/
         }
-    }*/
+    }
 
     private fun navigateToTransactionScreen() {
         val action = HomeFragmentDirections.actionHomeFragmentToTransactionFragment()

@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.wayapaychat.wayapos.views.fragments.SummaryFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="70dp"
+            android:paddingVertical="80dp"
+            android:background="@drawable/transfer_success_round_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/transfer_check_ic"
+                android:layout_gravity="center_horizontal"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/completed_desc_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sum of N40,000 is being sent to \nyour account"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#333333"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/completed_goHome_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:text="Okay, go home"
+            android:textAllCaps="false"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="16sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save as beneficiary"
+                android:fontFamily="@font/lato_regular"
+                android:layout_weight="1.8"
+                android:textColor="#333333"
+                android:textSize="16dp"/>
+
+            <Switch
+                android:id="@+id/summary_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

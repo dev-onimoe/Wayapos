@@ -1,0 +1,240 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.wayapaychat.wayapos.views.fragments.SummaryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="20dp"
+            android:src="@drawable/ic_transfer_arrow_left"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Pay to own Account"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beneficiary"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/transfer_benefciary_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Own Account"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/venice_blue"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount:"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/summary_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N40,000"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/venice_blue"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="to"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/summary_to_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O0190930311"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/venice_blue"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transaction fee:"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/summary_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N10.00"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/venice_blue"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description:"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/summary_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stipend"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#1C1C1C"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please input your 4 digit pin to complete \ntransaction"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#333333"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="14sp"/>
+
+        <com.chaos.view.PinView
+            android:id="@+id/summary_pinview"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/PinWidget.PinView"
+            app:viewType="line"
+            android:inputType="numberPassword"
+            app:lineColor="@color/grey"
+            app:itemSpacing="40dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/summary_error_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:text="Incorrect pin, kindly check again"
+            android:textColor="@color/red"
+            android:fontFamily="@font/lato_regular"/>
+
+        <Button
+            android:id="@+id/summary_confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="16sp"
+            android:enabled="false"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

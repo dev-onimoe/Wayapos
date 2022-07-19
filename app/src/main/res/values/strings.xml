@@ -306,4 +306,21 @@ Companies or websites that handle customer information are required to publish t
     <string name="chargeback_info">By accepting this chargeback, you’re instructing us to process a refund that will be deducted from your next settlement.</string>
     <string name="upload_documents">Upload Documents<font color="#F88E36">*</font></string>
     <string name="type_of_proof">Type of proof <font color="#F88E36">*</font> </string>
+    <string-array name="recipient_type">
+        <item> -Transfer from- </item>
+        <item> Wayas user </item>
+        <item> Non-waya user</item>
+    </string-array>
+
+    <string-array name="agency_filter_category">
+        <item> -Select Category- </item>
+        <item> Funding </item>
+        <item> Transfer </item>
+        <item> Withdraw</item>
+        <item> Utility Bill</item>
+        <item> Airtime</item>
+        <item> Data</item>
+        <item> Bonus</item>
+        <item> Commission</item>
+    </string-array>
 </resources>

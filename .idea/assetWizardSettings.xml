@@ -303,8 +303,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_wayapos_logo" />
-                            <entry key="sourceFile" value="$USER_HOME$/Desktop/wayapos_logo.svg" />
+                            <entry key="outputName" value="ic_successful" />
+                            <entry key="sourceFile" value="$PROJECT_DIR$/../Group 11046.svg" />
                           </map>
                         </option>
                       </PersistentState>

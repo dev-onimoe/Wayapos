@@ -25,4 +25,12 @@
     <color name="eucalyptus">#219653</color>
     <color name="gray_900">#F4F0F0</color>
     <color name="gray_600">#E2E2E2</color>
+    <color name="revenue_gray">#555555</color>
+    <color name="settlement_gray">#666666</color>
+    <color name="view_gray">#C4C4C4</color>
+    <color name="red">#FF0000</color>
+    <color name="t_black">#4F4F4F</color>
+    <color name="wp_black">#1C1C1C</color>
+    <color name="light_grey">#F3F2F2</color>
+
 </resources>

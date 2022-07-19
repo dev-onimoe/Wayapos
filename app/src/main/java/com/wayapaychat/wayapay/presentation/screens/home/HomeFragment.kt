@@ -3,6 +3,7 @@ package com.wayapaychat.wayapay.presentation.screens.home
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.view.MenuItem
 import android.view.View
 import android.widget.PopupMenu
@@ -35,6 +36,7 @@ import com.wayapaychat.wayapay.presentation.utils.cache.CacheConstants
 import com.wayapaychat.wayapay.presentation.utils.cache.CacheConstants.Keys.FIRST_LOGIN
 import com.wayapaychat.wayapay.presentation.utils.ext.views.TAG
 import com.wayapaychat.wayapay.presentation.utils.ext.views.showAlertDialogMessage
+import com.wayapaychat.wayapos.views.activities.WayaPosHomeActivity
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -233,8 +235,11 @@ class HomeFragment : BaseFragment<HomeFragmentBinding>(R.layout.home_fragment) {
                     viewPager.currentItem = 0
                     productSwitcher.setImageResource(R.drawable.wayapay_active)
                 } else {
-                    viewPager.currentItem = 1
+                    //viewPager.currentItem = 1
+                    val intent = Intent(activity, WayaPosHomeActivity::class.java)
+                    startActivity(intent)
                     productSwitcher.setImageResource(R.drawable.wayapos_active)
+                    productSwitcher.setImageResource(R.drawable.wayapay_active)
                 }
             }
         }

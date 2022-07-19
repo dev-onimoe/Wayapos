@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.wayapaychat.wayapos.views.fragments.Beneficiaries_transfer_fragment2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="30dp"
+            android:src="@drawable/ic_transfer_arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/lato_bold"
+            android:text="Pay to Beneficiary"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tf_ben_recipient"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:paddingHorizontal="14dp"
+            android:background="@drawable/stroked_toolbar_bg"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center_vertical"
+
+            android:text="Recicpient"
+            android:textColor="@color/view_gray"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/tf_id_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/tf_ben_amount"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/stroked_toolbar_bg"
+            android:fontFamily="@font/lato_regular"
+            android:hint="Amount"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:paddingHorizontal="14dp"
+            android:textColorHint="@color/view_gray"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/tf_ben_note"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/stroked_toolbar_bg"
+            android:fontFamily="@font/lato_regular"
+            android:hint="Add note(optional)"
+            android:lines="1"
+            android:paddingHorizontal="14dp"
+            android:textColorHint="@color/view_gray"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/ben_tf_error_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Incorrect pin, kindly check again"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/ben_tf_proceed_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Proceed"
+            android:textAllCaps="false"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

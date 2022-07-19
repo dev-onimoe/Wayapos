@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_orange"
+    android:orientation="vertical"
+    tools:context="com.wayapaychat.wayapos.views.fragments.transaction.Terminal_transaction_fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="20dp"
+            android:src="@drawable/transaction_white_back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/lato_bold"
+            android:text="Wayapos transactions"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/transaction_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="20dp"
+            android:src="@drawable/transaction_filter_ic" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/merchant_terminal_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        android:layout_gravity="center_horizontal"
+        android:text="PAX Android - 787446"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="10dp"
+        android:drawablePadding="6dp"
+        android:padding="6dp"
+        android:background="@drawable/off_white_rounded_bg"
+        android:drawableEnd="@drawable/arrow_down"/>
+
+    <Spinner
+        android:id="@+id/terminal_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/transaction_search_box"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginHorizontal="20dp"
+        android:padding="8dp"
+        android:drawableEnd="@drawable/transaction_search_ic"
+        android:hint="Search with reference id or customer email"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="12dp"
+        android:background="@drawable/off_white_rounded_corners"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="16dp"
+        android:background="@drawable/white_top_rounded_corner_bg"
+        android:layout_marginTop="22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_top_rounded_corner_bg"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/t_black"
+                android:fontFamily="@font/lato_bold"
+                android:text="Transactions"
+                />
+            <View
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:background="@color/deep_orange"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/grey"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/transactions_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/transactions_item"
+                android:layout_marginVertical="10dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/yhnty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="8dp"
+            android:textColor="@color/t_black"
+            android:fontFamily="@font/lato_regular"
+            android:layout_gravity="center"
+            android:text="You have no transactions yet"
+            />
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.wayapaychat.wayapos.views.fragments.OwnTFFragment1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="30dp"
+            android:src="@drawable/ic_transfer_arrow_left"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Pay to own Account"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tf_from"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="14dp"
+            android:fontFamily="@font/lato_regular"
+            android:background="@drawable/stroked_toolbar_bg"
+            android:drawableEnd="@drawable/tf_dropdown_ic"
+            android:textSize="16dp"
+            android:textColor="@color/view_gray"
+            android:text="Transfer From"/>
+        <Spinner
+            android:id="@+id/from_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tf_to"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="14dp"
+            android:fontFamily="@font/lato_regular"
+            android:background="@drawable/stroked_toolbar_bg"
+            android:drawableEnd="@drawable/tf_dropdown_ic"
+            android:textSize="16dp"
+            android:textColor="@color/view_gray"
+            android:text="Transfer to"/>
+        <Spinner
+            android:id="@+id/to_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/tf_own_amount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:paddingHorizontal="14dp"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Amount"
+            android:textColorHint="@color/view_gray"
+            android:background="@drawable/stroked_toolbar_bg"/>
+
+        <EditText
+            android:id="@+id/tf_own_note"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:paddingHorizontal="14dp"
+            android:lines="1"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Add note(Optional)"
+            android:textColorHint="@color/view_gray"
+            android:background="@drawable/stroked_toolbar_bg"/>
+
+        <TextView
+            android:id="@+id/own_tf_error_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:text="error text"
+            android:textColor="@color/red"
+            android:fontFamily="@font/lato_regular"/>
+
+
+        <Button
+            android:id="@+id/own_tf_send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:text="Send"
+            android:textSize="16dp"
+            android:fontFamily="@font/lato_bold"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

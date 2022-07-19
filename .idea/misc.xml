@@ -3,14 +3,74 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/card_bg.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/features_overall_bg.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/grey_bgrd_stroke.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/grey_rounded_bg.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/grey_stroked_rounded_white_bg.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/landing_revenue_card.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/landingpage_features_bg.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/off_white_rounded_corners.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/orage_circle_bg.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/slide_view_bar.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/slideup_selection_bg.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/stroked_toolbar_bg.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/toolbar_card_bg.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/transfer_success_round_bg.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/transferr_complete_background.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/wayapos_active.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/white_rounded_bg.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/white_top_rounded_corner_bg.xml" value="0.174" />
+        <entry key="app/src/main/res/font/lato.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/activity_transactions.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/activity_transfer_mode.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/agency_account_selection_item.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/agency_transaction_bill_details.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/agency_transactions.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/agency_transactions_item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/bill_pdf_receipt.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/coming_soon.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/filter_inapp_transactions_layout.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/filter_terminal_transactions_layout.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/filter_transactions_layout.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_agency_account_selection_fragment.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_agency_account_transactions.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_agency_transaction_details.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_agency_transaction_transfer_details.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_beneficiaries_transfer_fragment1.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_beneficiaries_transfer_fragment2.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_email_transfer_fragment1.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_email_transfer_fragment2.xml" value="0.17552083333333332" />
+        <entry key="app/src/main/res/layout/fragment_own_tf1.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_own_tf2.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_phone_transfer_fragment1.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_phone_transfer_fragment2.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_terminal_transaction_fragment.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_transfer__complete_.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_transfer_complete.xml" value="0.191912841796875" />
+        <entry key="app/src/main/res/layout/fragment_waya_id_transfer1.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/home_fragment.xml" value="0.18697916666666667" />
         <entry key="app/src/main/res/layout/info_list_item.xml" value="0.2947916666666667" />
         <entry key="app/src/main/res/layout/onboarding_layout.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/other_transfers_selection.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/refer_and_earn.xml" value="0.18697916666666667" />
         <entry key="app/src/main/res/layout/splash_screen.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/summary_fragment.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/transaction_item.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/transactions_item.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/transfer_initial_selection.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/transfer_pdf_receipt.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/user_id_layout.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/wayapay_home_fragment.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/wayapay_transaction.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/wayapos_home.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/wayapos_landing.xml" value="0.2214971923828125" />
+        <entry key="app/src/main/res/xml/provider_paths.xml" value="0.18697916666666667" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16_PREVIEW" project-jdk-name="16" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="16" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

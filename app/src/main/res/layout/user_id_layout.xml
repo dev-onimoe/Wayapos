@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="8dp"
+    android:layout_marginVertical="4dp"
+    android:layout_marginRight="8dp"
+    android:background="@drawable/grey_stroked_rounded_white_bg">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/transfer_mail_ic"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/id_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical"
+        android:textColor="#888888"
+        android:text="Barry Allen"
+        android:layout_marginLeft="8dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/x_mark_ic"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"/>
+</LinearLayout>

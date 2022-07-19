@@ -1,5 +1,6 @@
 package com.wayapaychat.wayapay.presentation.screens.home.wayapay_home
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -7,23 +8,26 @@ import android.view.WindowManager
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
+import com.google.gson.Gson
 import com.mikhaellopez.circularprogressbar.CircularProgressBar
 import com.wayapaychat.wayapay.R
 import com.wayapaychat.wayapay.databinding.WayapayHomeFragmentBinding
 import com.wayapaychat.wayapay.framework.state_machine.StateMachine
-import com.wayapaychat.wayapay.presentation.screens.ComingSoonActivity
 import com.wayapaychat.wayapay.presentation.screens.home.HomeFragmentDirections
 import com.wayapaychat.wayapay.presentation.screens.refer_earn.ReferAndEarnActivity
 import com.wayapaychat.wayapay.presentation.screens.transaction.wayapay.WayaPayTransactionsViewModel
+import com.wayapaychat.wayapay.presentation.utils.cache.CacheImpl
 import com.wayapaychat.wayapay.presentation.utils.ext.views.formatToNaira
 import com.wayapaychat.wayapay.presentation.utils.ext.views.showAlertDialogMessage
 import dagger.hilt.android.AndroidEntryPoint
+import org.json.JSONObject
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class WayapayHomeFragment @Inject constructor(val myviewModel: WayaPayTransactionsViewModel) : Fragment(R.layout.wayapay_home_fragment) {
 
     val viewModel: WayaPayTransactionsViewModel by viewModels()
+    var map = HashMap<String, Any>()
 
     lateinit var binding: WayapayHomeFragmentBinding
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -39,9 +43,11 @@ class WayapayHomeFragment @Inject constructor(val myviewModel: WayaPayTransactio
         )
         listeners()
         Observers()
+
     }
 
     fun Observers() {
+        val cache = CacheImpl(activity as Context, Gson())
         myviewModel.revenueStatsObserver.observe(viewLifecycleOwner) {
             when (it) {
                 is StateMachine.Loading -> {
@@ -62,18 +68,26 @@ class WayapayHomeFragment @Inject constructor(val myviewModel: WayaPayTransactio
                         if (it.data.data?.revenueStats?.grossRevenue == null) "NGN 0.00" else formatToNaira(
                             it.data.data.revenueStats.grossRevenue
                         )
+                    cache.putString("gross", binding.grossRevenueAmount.text as String)
+                    //map.put("gross", it.data.data!!.revenueStats.grossRevenue)
                     binding.netRevenueAmount.text =
                         if (it.data.data?.revenueStats?.netRevenue == null) "NGN 0.00" else formatToNaira(
                             it.data.data.revenueStats.netRevenue
                         )
+                    cache.putString("net", binding.netRevenueAmount.text as String)
+                    //map.put("net", it.data.data!!.revenueStats.netRevenue)
                     binding.commissionAmount.text =
                         if (it.data.data?.revenueStats?.netRevenue == null ) "NGN 0.00" else formatToNaira(
                             it.data.data.revenueStats.grossRevenue - it.data.data.revenueStats.netRevenue
                         )
+                    cache.putString("commission", binding.commissionAmount.text as String)
+                    //map.put("commission", it.data.data!!.revenueStats.grossRevenue - it.data.data!!.revenueStats.netRevenue)
                     binding.lastSettlementAmount.text =
                         if (it.data.data?.settlementStats?.latestSettlement == null) "NGN 0.00" else formatToNaira(
                             it.data.data.settlementStats.latestSettlement
                         )
+                    cache.putString("lastSettlement", binding.lastSettlementAmount.text as String)
+                    //map.put("lastSettlement", it.data.data.settlementStats.latestSettlement)
                     binding.nextSettlementAmmount.text =
                         if (it.data.data?.settlementStats?.nextSettlement == null) "NGN 0.00" else formatToNaira(
                             it.data.data.settlementStats.nextSettlement
@@ -117,6 +131,7 @@ class WayapayHomeFragment @Inject constructor(val myviewModel: WayaPayTransactio
                 is StateMachine.Success -> {
                     loading(false, binding.progressBar)
                     binding.totalRevenueValue.text = formatToNaira(it.data.data.totalRevenueForSelectedDateRange)
+                    cache.putString("total", binding.totalRevenueValue.text as String)
                 }
 
                 is StateMachine.TimeOut -> {
@@ -137,6 +152,18 @@ class WayapayHomeFragment @Inject constructor(val myviewModel: WayaPayTransactio
                 }
             }
         }
+    }
+
+    private fun getJsonFromMap(map: HashMap<String, Any>): String {
+        val jsonData = JSONObject()
+        for (key in map.keys) {
+            var value = map[key]
+            if (value is HashMap<*, *>) {
+                value = getJsonFromMap(value as HashMap<String, Any>)
+            }
+            jsonData.put(key, value)
+        }
+        return jsonData.toString()
     }
 
     private fun listeners() {
