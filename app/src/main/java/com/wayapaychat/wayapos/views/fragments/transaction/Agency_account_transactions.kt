@@ -229,7 +229,8 @@ class Agency_account_transactions(var account: WalletAccount) : Fragment() {
 
                                     }
                                 }
-                                filterList = vlist
+                                filterList!!.clear()
+                                filterList!!.addAll(vlist!!)
                             }
                             filterOn = true
                         }else {
@@ -279,6 +280,7 @@ class Agency_account_transactions(var account: WalletAccount) : Fragment() {
                                         filterList!!.add(item)
                                         vlist!!.add(item)
 
+
                                     }
                                 }
                             }else if (filterList!!.isEmpty() && filterOn == true){
@@ -298,7 +300,8 @@ class Agency_account_transactions(var account: WalletAccount) : Fragment() {
                                         vlist!!.remove(item)
                                     }
                                 }
-                                filterList = vlist
+                                filterList!!.clear()
+                                filterList!!.addAll(vlist!!)
                             }
                             filterOn = true
                         }else {
