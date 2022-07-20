@@ -280,7 +280,6 @@ class Agency_account_transactions(var account: WalletAccount) : Fragment() {
                                         filterList!!.add(item)
                                         vlist!!.add(item)
 
-
                                     }
                                 }
                             }else if (filterList!!.isEmpty() && filterOn == true){
